@@ -3,7 +3,7 @@ const projectsData = [
     {
         id: 1,
         title: "Sistema de E-commerce",
-        description: "Plataforma completa de e-commerce com React.js, Node.js e PostgreSQL",
+        description: "Plataforma de e-commerce com React.js, Spring Boot e PostgreSQL",
         image: "placeholder-ecommerce.jpg",
         technologies: ["React.js", "Node.js", "PostgreSQL", "Docker"],
         category: "fullstack",
@@ -23,7 +23,7 @@ const projectsData = [
     {
         id: 3,
         title: "Dashboard Analytics",
-        description: "Dashboard interativo para visualização de dados em tempo real",
+        description: "Dashboard interativo para visualização de dados de vendas em tempo real",
         image: "placeholder-dashboard.jpg",
         technologies: ["React.js", "D3.js", "Node.js", "MongoDB"],
         category: "fullstack",
