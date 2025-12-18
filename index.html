@@ -1,273 +1,187 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-color-scheme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Márcio Brito - Desenvolvedor Full Stack & Cientista de Dados</title>
+    <title>Desenvolvedor Full Stack & Data Science</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header/Navigation -->
     <header class="header">
-        <div class="container">
-            <div class="header__content">
-                <div class="logo">
-                    <h2>Márcio Brito</h2>
-                </div>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li><a href="#sobre" class="nav__link">Sobre</a></li>
-                        <li><a href="#projetos" class="nav__link">Projetos</a></li>
-                        <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
-                        <li><a href="#contato" class="nav__link">Contato</a></li>
-                    </ul>
-                </nav>
-                <button class="mobile-menu-btn" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h3>DevPortfolio</h3>
             </div>
-        </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#sobre" class="nav__link">Sobre</a></li>
+                <li><a href="#projetos" class="nav__link">Projetos</a></li>
+                <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
+                <li><a href="#contato" class="nav__link">Contato</a></li>
+            </ul>
+            <button class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero__content">
-                    <h1 class="hero__title">Márcio Brito</h1>
-                    <p class="hero__subtitle">Desenvolvedor Full Stack & Cientista de Dados</p>
-                    <p class="hero__description">Desenvolvedor apaixonado por tecnologia com foco em criar soluções inovadoras. Especializado em desenvolvimento web full stack e análise de dados, sempre buscando entregar projetos que fazem a diferença.</p>
-                    <a href="#projetos" class="btn btn--primary btn--lg">Ver Meus Projetos</a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">Desenvolvendo <span class="gradient-text">at the speed of thought</span></h1>
+                <p class="hero__subtitle">Desenvolvedor Full Stack & Cientista de Dados</p>
+                <p class="hero__description">
+                    Transformando dados em insights acionáveis e criando experiências digitais excepcionais 
+                    com tecnologias modernas e abordagens inovadoras.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#projetos" class="btn btn--primary btn--lg">Ver Projetos</a>
+                    <a href="#contato" class="btn btn--outline btn--lg">Entrar em Contato</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Sobre Section -->
-        <section id="sobre" class="sobre">
-            <div class="container">
-                <h2 class="section__title">Sobre Mim</h2>
-                <div class="sobre__content">
-                    <div class="sobre__text">
-                        <p>Sou um desenvolvedor apaixonado por tecnologia com experiência sólida em desenvolvimento web full stack e ciência de dados. Tenho expertise em criar soluções completas, desde o frontend até o backend, além de trabalhar com análise de dados e machine learning.</p>
-                        <p>Minha jornada na tecnologia começou há alguns anos e desde então tenho me dedicado a aprender constantemente novas tecnologias e metodologias. Acredito que a tecnologia pode transformar negócios e melhorar a vida das pessoas.</p>
-                        <p>Quando não estou codando, gosto de contribuir com projetos open source, estudar novas tendências em tecnologia e compartilhar conhecimento com a comunidade.</p>
-                    </div>
-                    <div class="sobre__photo">
-                        <div class="photo-placeholder">
-                            <span>JS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projetos Section -->
-        <section id="projetos" class="projetos">
-            <div class="container">
-                <h2 class="section__title">Projetos</h2>
-                <div class="projetos__grid">
-                    <div class="projeto-card" data-categoria="Full Stack">
-                        <div class="projeto-card__image">
-                            <div class="image-placeholder">
-                                <span>E-commerce</span>
+    <!-- Sobre Section -->
+    <section class="section" id="sobre">
+        <div class="container">
+            <h2 class="section__title">Sobre</h2>
+            <div class="about">
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="about__description">
+                            Desenvolvedor Full Stack e Cientista de Dados apaixonado por criar soluções inovadoras 
+                            que transformam dados em insights acionáveis e experiências digitais excepcionais.
+                        </p>
+                        <div class="about__stats">
+                            <div class="stat">
+                                <span class="stat__number">3+</span>
+                                <span class="stat__label">Anos de experiência</span>
                             </div>
                         </div>
-                        <div class="projeto-card__content">
-                            <h3 class="projeto-card__title">E-commerce Platform</h3>
-                            <p class="projeto-card__description">Plataforma de e-commerce completa com carrinho de compras, sistema de pagamento e painel administrativo.</p>
-                            <div class="projeto-card__tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">MongoDB</span>
-                                <span class="tech-tag">Stripe</span>
+                        <div class="about__values">
+                            <h4>Valores</h4>
+                            <div class="values-grid">
+                                <span class="value-tag">Código limpo</span>
+                                <span class="value-tag">Inovação</span>
+                                <span class="value-tag">Aprendizado contínuo</span>
+                                <span class="value-tag">Colaboração</span>
                             </div>
-                            <button class="btn btn--outline btn--sm projeto-btn" data-projeto="0">Ver Projeto</button>
                         </div>
                     </div>
-
-                    <div class="projeto-card" data-categoria="Full Stack">
-                        <div class="projeto-card__image">
-                            <div class="image-placeholder">
-                                <span>Tasks</span>
-                            </div>
-                        </div>
-                        <div class="projeto-card__content">
-                            <h3 class="projeto-card__title">Task Management App</h3>
-                            <p class="projeto-card__description">Aplicação de gerenciamento de tarefas com colaboração em tempo real e notificações.</p>
-                            <div class="projeto-card__tech">
-                                <span class="tech-tag">Vue.js</span>
-                                <span class="tech-tag">Express</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">Socket.io</span>
-                            </div>
-                            <button class="btn btn--outline btn--sm projeto-btn" data-projeto="1">Ver Projeto</button>
-                        </div>
-                    </div>
-
-                    <div class="projeto-card" data-categoria="Full Stack">
-                        <div class="projeto-card__image">
-                            <div class="image-placeholder">
-                                <span>Real Estate</span>
-                            </div>
-                        </div>
-                        <div class="projeto-card__content">
-                            <h3 class="projeto-card__title">Real Estate Website</h3>
-                            <p class="projeto-card__description">Site imobiliário com busca avançada, mapas interativos e sistema de favoritos.</p>
-                            <div class="projeto-card__tech">
-                                <span class="tech-tag">Next.js</span>
-                                <span class="tech-tag">Prisma</span>
-                                <span class="tech-tag">MySQL</span>
-                                <span class="tech-tag">Google Maps API</span>
-                            </div>
-                            <button class="btn btn--outline btn--sm projeto-btn" data-projeto="2">Ver Projeto</button>
-                        </div>
-                    </div>
-
-                    <div class="projeto-card" data-categoria="Data Science">
-                        <div class="projeto-card__image">
-                            <div class="image-placeholder">
-                                <span>Analytics</span>
-                            </div>
-                        </div>
-                        <div class="projeto-card__content">
-                            <h3 class="projeto-card__title">Sales Analytics Dashboard</h3>
-                            <p class="projeto-card__description">Dashboard interativo para análise de vendas com visualizações dinâmicas e insights automatizados.</p>
-                            <div class="projeto-card__tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Pandas</span>
-                                <span class="tech-tag">Plotly</span>
-                                <span class="tech-tag">Streamlit</span>
-                            </div>
-                            <button class="btn btn--outline btn--sm projeto-btn" data-projeto="3">Ver Projeto</button>
-                        </div>
-                    </div>
-
-                    <div class="projeto-card" data-categoria="Data Science">
-                        <div class="projeto-card__image">
-                            <div class="image-placeholder">
-                                <span>ML Model</span>
-                            </div>
-                        </div>
-                        <div class="projeto-card__content">
-                            <h3 class="projeto-card__title">Customer Segmentation Model</h3>
-                            <p class="projeto-card__description">Modelo de machine learning para segmentação de clientes baseado em comportamento de compra.</p>
-                            <div class="projeto-card__tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Scikit-learn</span>
-                                <span class="tech-tag">Seaborn</span>
-                                <span class="tech-tag">Jupyter</span>
-                            </div>
-                            <button class="btn btn--outline btn--sm projeto-btn" data-projeto="4">Ver Projeto</button>
-                        </div>
-                    </div>
-
-                    <div class="projeto-card" data-categoria="Data Science">
-                        <div class="projeto-card__image">
-                            <div class="image-placeholder">
-                                <span>AI System</span>
-                            </div>
-                        </div>
-                        <div class="projeto-card__content">
-                            <h3 class="projeto-card__title">Predictive Maintenance System</h3>
-                            <p class="projeto-card__description">Sistema de manutenção preditiva usando deep learning para detectar falhas em equipamentos.</p>
-                            <div class="projeto-card__tech">
-                                <span class="tech-tag">TensorFlow</span>
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Docker</span>
-                                <span class="tech-tag">Kubernetes</span>
-                            </div>
-                            <button class="btn btn--outline btn--sm projeto-btn" data-projeto="5">Ver Projeto</button>
+                    <div class="about__image">
+                        <div class="profile-placeholder">
+                            <div class="profile-icon">👨‍💻</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Habilidades Section -->
-        <section id="habilidades" class="habilidades">
-            <div class="container">
-                <h2 class="section__title">Habilidades</h2>
-                <div class="habilidades__content">
-                    <div class="habilidades__column">
-                        <h3 class="habilidades__subtitle">Full Stack Development</h3>
-                        <ul class="habilidades__list">
-                            <li>JavaScript/TypeScript</li>
-                            <li>Python</li>
-                            <li>Django</li>
-                            <li>PostgreSQL</li>
-                            <li>MongoDB</li>
-                            <li>Docker</li>
-                            <li>AWS</li>
-                        </ul>
+    <!-- Projetos Section -->
+    <section class="section" id="projetos">
+        <div class="container">
+            <h2 class="section__title">Projetos</h2>
+            <div class="projects">
+                <div class="projects__filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    <button class="filter-btn" data-filter="datascience">Data Science</button>
+                </div>
+                <div class="projects__grid" id="projects-grid">
+                    <!-- Projects will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades Section -->
+    <section class="section" id="habilidades">
+        <div class="container">
+            <h2 class="section__title">Habilidades</h2>
+            <div class="skills">
+                <div class="skills__category">
+                    <h3 class="skills__category-title">Frontend</h3>
+                    <div class="skills__grid" id="frontend-skills">
+                        <!-- Frontend skills will be dynamically loaded -->
                     </div>
-                    <div class="habilidades__column">
-                        <h3 class="habilidades__subtitle">Data Science</h3>
-                        <ul class="habilidades__list">
-                            <li>Python</li>
-                            <li>Pandas</li>
-                            <li>NumPy</li>
-                            <li>Scikit-learn</li>
-                            <li>TensorFlow</li>
-                            <li>Keras</li>
-                            <li>Jupyter</li>
-                            <li>Matplotlib</li>
-                            <li>Seaborn</li>
-                            <li>Plotly</li>
-                            <li>SQL</li>
-                            <li>Statistics</li>
-                        </ul>
+                </div>
+                <div class="skills__category">
+                    <h3 class="skills__category-title">Backend</h3>
+                    <div class="skills__grid" id="backend-skills">
+                        <!-- Backend skills will be dynamically loaded -->
+                    </div>
+                </div>
+                <div class="skills__category">
+                    <h3 class="skills__category-title">Data Science</h3>
+                    <div class="skills__grid" id="datascience-skills">
+                        <!-- Data science skills will be dynamically loaded -->
+                    </div>
+                </div>
+                <div class="skills__category">
+                    <h3 class="skills__category-title">DevOps</h3>
+                    <div class="skills__grid" id="devops-skills">
+                        <!-- DevOps skills will be dynamically loaded -->
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contato Section -->
-        <section id="contato" class="contato">
-            <div class="container">
-                <h2 class="section__title">Contato</h2>
-                <div class="contato__content">
-                    <p class="contato__description">Interessado em trabalhar juntos? Entre em contato comigo!</p>
-                    <div class="contato__links">
-                        <a href="mailto:marcio_ssbrito@hotmail.com" class="contato__link">
-                            <span class="contato__icon">✉</span>
-                            <span>marcio_ssbrito@hotmail.com</span>
-                        </a>
-                        <a href="https://github.com/MarcioOliveiraDev" class="contato__link" target="_blank">
-                            <span class="contato__icon">⚡</span>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://linkedin.com/in/márcio-brito-527067110" class="contato__link" target="_blank">
-                            <span class="contato__icon">💼</span>
-                            <span>LinkedIn</span>
-                        </a>
+    <!-- Contato Section -->
+    <section class="section" id="contato">
+        <div class="container">
+            <h2 class="section__title">Contato</h2>
+            <div class="contact">
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <h3>Vamos trabalhar juntos</h3>
+                        <p>Interessado em colaborar? Entre em contato e vamos conversar sobre seu próximo projeto.</p>
+                        <div class="contact__links">
+                            <a href="https://github.com/MarcioOliveiraDev" target="_blank" class="contact__link">
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/marcio-brito-dev" target="_blank" class="contact__link">
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="mailto:contato@exemplo.com" class="contact__link">
+                                <span>Email</span>
+                            </a>
+                        </div>
                     </div>
+                    <form class="contact__form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Enviar Mensagem</button>
+                    </form>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Márcio Brito. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Desenvolvedor Portfolio. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <!-- Modal -->
-    <div id="projeto-modal" class="modal hidden">
-        <div class="modal__backdrop"></div>
-        <div class="modal__content">
-            <button class="modal__close">&times;</button>
-            <div class="modal__body">
-                <h3 id="modal-title"></h3>
-                <p id="modal-description"></p>
-                <div id="modal-tech" class="projeto-card__tech"></div>
-            </div>
-        </div>
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

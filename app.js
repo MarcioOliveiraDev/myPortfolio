@@ -3,7 +3,7 @@ const projectsData = [
     {
         id: 1,
         title: "Sistema de E-commerce",
-        description: "Plataforma de e-commerce com React.js, Spring Boot e PostgreSQL",
+        description: "Plataforma completa de e-commerce com React.js, Node.js e PostgreSQL",
         image: "placeholder-ecommerce.jpg",
         technologies: ["React.js", "Node.js", "PostgreSQL", "Docker"],
         category: "fullstack",
@@ -23,7 +23,7 @@ const projectsData = [
     {
         id: 3,
         title: "Dashboard Analytics",
-        description: "Dashboard interativo para visualização de dados de vendas em tempo real",
+        description: "Dashboard interativo para visualização de dados em tempo real",
         image: "placeholder-dashboard.jpg",
         technologies: ["React.js", "D3.js", "Node.js", "MongoDB"],
         category: "fullstack",
@@ -166,6 +166,9 @@ function renderSkills() {
 
 // Handle contact form
 function initContactForm() {
+    // Initialize EmailJS with your public key
+    emailjs.init('SUA_PUBLIC_KEY_AQUI'); // Substitua com sua Public Key
+    
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
@@ -176,19 +179,31 @@ function initContactForm() {
             message: formData.get('message')
         };
         
-        // Simulate form submission
         const submitButton = contactForm.querySelector('button[type="submit"]');
         const originalText = submitButton.textContent;
         
         submitButton.textContent = 'Enviando...';
         submitButton.disabled = true;
         
-        setTimeout(() => {
+        // Send email using EmailJS
+        emailjs.send('SUA_SERVICE_ID_AQUI', 'SUA_TEMPLATE_ID_AQUI', {
+            from_name: data.name,
+            from_email: data.email,
+            message: data.message,
+            to_email: 'SEU_EMAIL_AQUI'
+        })
+        .then((response) => {
             alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
             contactForm.reset();
             submitButton.textContent = originalText;
             submitButton.disabled = false;
-        }, 1000);
+        })
+        .catch((error) => {
+            console.error('Erro ao enviar email:', error);
+            alert('Erro ao enviar mensagem. Tente novamente mais tarde.');
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
+        });
     });
 }
 
